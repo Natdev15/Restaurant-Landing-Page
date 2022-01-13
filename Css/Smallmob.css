@@ -1,0 +1,324 @@
+@media only screen and (max-width: 402px){
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    /* Global Variables */
+    :root{
+        /* font families */
+       --Russo: 'Russo One', sans-serif;
+       --baloo:'Baloo Bhai 2', cursive;
+       --balooBehn: 'Baloo Bhaina 2', cursive;
+       --Noto: 'Noto Sans TC', sans-serif;
+    
+       /* colors */
+       --col1: #FF5733;
+       --col2: #ECAE12;
+       --col3: #3BABF1;
+       --col4: #5042F3;
+       --col5: #F3429A;
+       --col6: #F2292C;
+       --col7: #C8BB1F;
+       --col8: #FFF;
+       --col9: #000;
+    }
+    
+    
+    /* <!-- Navbar Section --> */
+    
+    #navbar::before{
+        height: 60px;
+        /* align-items: center; */
+        
+    }
+    
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        }
+    
+    
+    #navbar h1{
+        font-family: var(--baloo);
+        color: var(--col9);
+        text-shadow: 1px 1px red;
+        font-size: 20px;
+        text-align: center;
+        padding: 4px 0px 2px 0px;
+    }
+
+    
+    #navbar li a{
+        text-decoration: none;
+        padding: 2px;
+        margin-bottom: 4px;
+        font-size: 8px;
+        color: var(--col9);
+        font-weight: bold;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        border-bottom-right-radius:  4px;
+        
+    }
+    #navbar li a:hover{
+        border-bottom: 0.5px solid white;
+        color: rgb(209, 204, 204);
+    }
+    #navbar li a.active{
+        color: rgb(209, 204, 204);
+    } 
+    #navbar li a.active:hover{
+        border-bottom: 0.5px solid white;
+        color: rgb(209, 204, 204);
+    }
+    
+    
+    
+    
+    
+    /* Head Section  */
+    
+    section .head::before{
+        content: "";
+        background-image: url("../Img/Background/BG-2.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+        opacity: 0.899;
+    }
+    
+    
+    section .head{
+        display: flex;
+        height: 160px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--col8);
+        padding: 10px 30px;
+       
+    }
+    section  .head h1{
+        font-size: 14px;
+        font-family: var(--baloo);
+        padding: 4px;
+        margin-bottom: 2px;
+        text-align: center;
+    }
+    section .head p{
+        font-size: 6px;
+        font-family: var(--Russo);
+        padding: 3px;
+        text-align: center;
+    }
+    section .head .button{
+        text-decoration: none;
+        color: black;
+        /* color: white; */
+        border-radius: 3px;
+        margin: 10px 2px 20px 2px;
+        font-size: 8px;
+        padding: 2px 3px;
+        font-weight: bold;
+        border: 1px solid black;
+    }
+    section .head .button:hover{
+        cursor: pointer;
+        transition: all ease none 0s;
+        border-bottom: 0.5px solid black;
+        color: white;
+    }
+    
+    
+    
+    /* Quality Section  */
+    .qualities-container {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    .qualities-container h1{ 
+        font-size: 20px;
+        padding: 5px ;
+        text-shadow: 2px 1px 2px red;
+    
+    }
+    
+    #qualities{
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #qualities .box{
+        box-shadow: 2px 4px 3px gray;
+        padding: 5px;
+        width: 150px;
+        height: auto;
+        margin: 5px;
+    }
+    #qualities .box img{
+        height: 120px;
+        width: 120px;
+        display: block;
+        margin: auto;
+        
+    }
+    #qualities .box h2{
+        color: var(--col9);
+        text-shadow: 1px 1px 1.5px red;
+        font-size: 18px;
+        padding: 5px;
+    }
+    
+    #qualities .box h3{
+        font-size: 14px;
+        color: crimson;
+        padding: 3px;    
+    }
+    
+    
+    
+    /* Client Section  */
+    .client-container::before{
+        content: "";
+        background-image: url("../Img/Background/BG\ For\ Client\ Section.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0.6;
+    }
+    
+    .client-container{
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 180px;
+        /* border: 1px solid brown; */
+        text-align: center;
+        /* background-color: black; */
+    }
+    .client-container h1{
+        font-size: 18px;
+        text-shadow: 1px 1px 2px black;
+        color: rgb(233, 53, 53);
+        padding: 10px;
+    }
+    
+    #clients{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #clients .box{
+        margin: 20px 5px 20px 5px;
+        padding: 10px;
+    }
+    #clients img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    
+    /* Contact section */
+    #contact{
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+    #contact::before{
+        content: "";
+        background-image: url(../Img/Background/BG-Contact.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+        opacity: 0.6;
+    }
+    
+    #contact h1{
+        text-align: center ;
+        font-size: 18px;
+        color: black;
+        padding-top: 30px;
+        text-shadow: -1px -1px 1px maroon;
+    }
+    
+    .border{
+        display: flex;
+        flex-direction: column;
+        padding: 5px 20px;
+        }
+    .items{
+        font-weight: bold;
+        font-size: 10px;
+    }
+    
+    .itm{
+        width: 100px;
+        /* height: 40px; */
+        font-size: 12px;
+        padding: 2px;
+        border-radius: 3px;
+        border: none;
+        box-shadow: 1px 1px 1.5px 1px skyblue;
+        margin: 5px;
+    }
+    .items textarea{
+        height: 30px;
+        /* background-color: hotpink; */
+    }
+    .items .btn1{
+        border-radius: 3px;
+        background-color: rgb(181, 228, 247);
+        padding: 1.5px 4px;
+        cursor: pointer;
+        font-size: 10px;
+        font-weight: bold;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        color: rgba(243, 0, 0, 0.884);
+        position: relative;
+        top: 0px;
+        left: 10px;
+        
+    }
+    
+    
+    
+    Footer{
+        color: var(--col8);
+        font-size: 8px;
+        background-color: black;
+        opacity: 0.85;
+        text-align: center;
+    }   
+}
